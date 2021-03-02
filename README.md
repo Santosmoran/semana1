@@ -8,3 +8,4 @@ docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data --name "sa
 entramos al firefox de inta por terminal con el comando
 ssh 10.5.2.10 -X firefox
 
+https://github.com/Santosmoran/semana1/blob/main/fotos/repository-open-graph-template.png?raw=true
