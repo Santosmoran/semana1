@@ -31,13 +31,17 @@ paso 5
 <p><img src="https://user-images.githubusercontent.com/71399485/109643052-02d64c00-7b54-11eb-86eb-7dd63482dd09.png" alt="Cat"></p>
 
 
-creamos un volumen: sanjoreva_mail_server
+Creamos un volumen: sanjoreva_mail_server
 
-docker volume create volum_mail_server
+ -docker volume create volum_mail_server
 
-creamos el dominio sanjoreva.io
-docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data --name "sanjorevamailserver" -h "sanjoreva.io" -t analogic/poste.io
+Creamos el dominio sanjoreva.io
+ -docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data --name "sanjorevamailserver" -h "sanjoreva.io" -t analogic/poste.io
 
-entramos al firefox de inta por terminal con el comando
-ssh 10.5.2.10 -X firefox
-<p><img src="https://user-images.githubusercontent.com/71399485/109640295-9279fb80-7b50-11eb-9c0a-6673063723de.png" alt="Cat"></p>
+Entramos al firefox de inta por terminal con el comando
+ -ssh 10.5.2.10 -X firefox
+ -colocamos la ip: 172.17.0.2/admin (para crear una cuenta admin con el dominio admin@sanjoreva.io)
+<p><img src="https://user-images.githubusercontent.com/71399485/109845371-58daea80-7c4d-11eb-8625-ec7265f2cb34.png"></p>
+<p><img src="https://user-images.githubusercontent.com/71399485/109845616-a2c3d080-7c4d-11eb-8c5d-8d8c3ef4c458.png"></p>
+ -En otra pestaña del firefox que abrimos en inta escribimos la siguiente ip: 172.17.0.2/webmail
+ <p><img src="https://user-images.githubusercontent.com/71399485/109845710-b96a2780-7c4d-11eb-94ae-49342a902633.png"></p>
